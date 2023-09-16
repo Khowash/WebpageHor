@@ -1,0 +1,77 @@
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.transparent-bg {
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.white-bg {
+  background-color: #cad2c5;
+}
+
+nav {
+  font-family: "Inter";
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#logo img {
+  height: 20px;
+}
+
+ul {
+  position: relative;
+  font-size: 13px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: right;
+  margin-right: 20px;
+}
+
+ul:hover::after {
+  width: 100%;
+}
+
+ul li {
+  position: relative;
+  margin: 0 30px;
+}
+
+ul li::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #354f52;
+  transition: width 0.2s ease-in-out;
+}
+
+ul li:hover::after {
+  width: 100%;
+}
+
+ul li a {
+  text-decoration: none;
+  color: #000000;
+}
+
+.resihead {
+  justify-content: center;
+  padding: 100px;
+  width: 100px;
+  height: 100px;
+
+}
